@@ -1,0 +1,18 @@
+package testeResultadoPositivo;
+
+import org.junit.jupiter.api.DisplayName;
+import org.junit.jupiter.api.Test;
+
+import primeirasemana.calculadora;
+
+
+class ResultadosPositivosTest {
+
+	@Test
+	@DisplayName("Teste Inicial")
+	void test() {
+		calculadora c = new calculadora();
+		System.out.println(c.soma(2,  3));
+	}
+
+}

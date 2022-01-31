@@ -1,0 +1,18 @@
+package testeResultadoPositivo;
+
+import static org.junit.jupiter.api.Assertions.*;
+
+import org.junit.jupiter.api.DisplayName;
+import org.junit.jupiter.api.Test;
+
+import org.junit.jupiter.api.Test;
+
+class ResultadosPositivosTest {
+
+	@Test
+	@DisplayName("Teste Inicial")
+	void test() {
+		fail("Not yet implemented");
+	}
+
+}

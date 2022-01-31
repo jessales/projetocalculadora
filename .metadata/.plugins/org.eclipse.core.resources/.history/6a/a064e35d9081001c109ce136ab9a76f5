@@ -1,0 +1,39 @@
+package testeResultadoPositivo;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
+import org.junit.jupiter.api.BeforeAll;
+import org.junit.jupiter.api.DisplayName;
+import org.junit.jupiter.api.Test;
+
+import primeirasemana.calculadora;
+
+
+class ResultadosPositivosTest {
+	
+	@BeforeAll
+	static void preCondicacaoGeral () {
+		c = new calculadora();
+		System.out.println("00 - Pre condicao geral");
+	}
+	
+	@Test
+	@DisplayName("Soma de positivo e negativo ==> positivo")
+	void testSomaPositivoENegativo_ResultadoPositivo() {
+		System.out.println("1 - Soma positivo negativo => positivo");
+		assertEquals(4, c.soma(5, -2));
+		
+		
+	}
+	
+
+
+	@Test
+	@DisplayName("Soma positivos +> Resultado positivo")
+	void testSomaPositivos_ResultadosPositivo() {
+		calculadora c = new calculadora();
+		System.out.println(c.soma(2,  3));
+		assertEquals(5, c.soma(2,  3));
+	}
+
+}
